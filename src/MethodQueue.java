@@ -1,8 +1,8 @@
 public interface MethodQueue<T> {
 
-    void add(T element);
+    void enqueue(T element);
 
-    T enqueue();
+    T dequeue();
 
     T peek();
 

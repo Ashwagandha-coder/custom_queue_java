@@ -7,16 +7,16 @@ public class Client {
 
         customQueue.init();
 
-        customQueue.add(22);
-        customQueue.add(33);
-        customQueue.add(55);
-        customQueue.add(66);
-        customQueue.add(77);
+        customQueue.enqueue(22);
+        customQueue.enqueue(33);
+        customQueue.enqueue(55);
+        customQueue.enqueue(66);
+        customQueue.enqueue(77);
 
-        System.out.println(customQueue.enqueue());
-        System.out.println(customQueue.enqueue());
-        System.out.println(customQueue.enqueue());
-        System.out.println(customQueue.enqueue());
+        System.out.println(customQueue.dequeue());
+        System.out.println(customQueue.dequeue());
+        System.out.println(customQueue.dequeue());
+        System.out.println(customQueue.dequeue());
 
     }
 }

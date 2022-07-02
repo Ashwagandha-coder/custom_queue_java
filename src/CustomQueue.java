@@ -12,9 +12,9 @@ public class CustomQueue<T> implements MethodQueue<T> {
 
     public void init() { arrayList = new ArrayList<>(size); }
 
-    public void add(T element) { arrayList.add(element); }
+    public void enqueue(T element) { arrayList.add(element); }
 
-    public T enqueue() { return arrayList.remove(0); }
+    public T dequeue() { return arrayList.remove(0); }
 
     public T peek() { return arrayList.get(0); }
 
